@@ -70,36 +70,8 @@ The script generates a readable terminal report and stores health-check informat
 - `journalctl`
 - Git
 
-## Project Structure
-
+## Purpose
 ```text
-linux-server-health/
-├── server_health.sh
-├── README.md
-├── .gitignore
-└── logs/
-    └── health_check.log    # Generated log file, ignored by Git
-
-Tested Environment
-Ubuntu 24.04.1 LTS
-WSL2
-
-The script can also be used on other Linux distributions with the required utilities available.
-
-Usage
-1. Clone the Repository
-git clone https://github.com/YOUR_USERNAME/linux-server-health.git
-cd linux-server-health
-2. Make the Script Executable
-chmod +x server_health.sh
-3. Run the Health Check
-./server_health.sh
-
-The script performs the configured checks and displays the health report
-directly in the terminal.
-
-Purpose
-
 This project demonstrates practical Linux administration and Bash automation skills, including:
 
 Linux system monitoring
@@ -112,3 +84,35 @@ Basic security monitoring
 Log management
 Command-line automation
 Exit-code based automation
+```
+## Project Structure
+
+```text
+linux-server-health/
+├── server_health.sh
+├── README.md
+├── .gitignore
+└── logs/
+    └── health_check.log    # Generated log file, ignored by Git 
+    
+```
+## Usage
+```text
+1. Clone the Repository
+git clone https://github.com/YOUR_USERNAME/linux-server-health.git
+cd linux-server-health
+2. Make the Script Executable
+chmod +x server_health.sh
+3. Run the Health Check
+./server_health.sh
+
+The script performs the configured checks and displays the health report
+directly in the terminal.
+```
+## Tested Environment
+```text
+Ubuntu 24.04.1 LTS
+WSL2
+
+The script can also be used on other Linux distributions with the required utilities available.
+```
